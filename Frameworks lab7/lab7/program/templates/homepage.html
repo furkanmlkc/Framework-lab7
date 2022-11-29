@@ -1,0 +1,26 @@
+{%extends "navbar.html"%}
+
+{%block head%}
+    <title>Lab7 Homepage</title>
+{%endblock%}
+
+{%block content%}
+<div style="margin-top: 50px; margin-left: 180px;">
+    <form method = "POST">
+        {% csrf_token %}
+        <div class="mar" style="margin-bottom:2rem ;">
+            {{form.number1.label}}<br>
+            {{ form.number1 }}<br/>
+        </div>
+        <div class="mar" style="margin-bottom:2rem ;">
+            {{form.number2.label}}<br>
+            {{ form.number2 }}<br/>
+        </div>
+        <div class="mar" style="margin-bottom:2rem ;">
+            {{form.number3.label}}<br>
+            {{ form.number3 }}
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+{%endblock%}

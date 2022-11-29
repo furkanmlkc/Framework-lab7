@@ -1,0 +1,16 @@
+{%extends "navbar.html"%}
+
+{%block head%}
+    <title>Result page</title>
+{%endblock%}
+
+{%block content%}
+
+<h3 style="margin-left:120px; margin-top:20px;">Result of the program | Max and Min</h3>
+<hr>
+<div style="margin-left:120px; margin-top:20px;">
+    <h3>Maximum value of the numbers are : {{max_value}} {% load static %} <img src="{% static "lab7_app/media/up.jpg" %}" alt="home" /></h3>
+    
+    <h3>Minimum value of the numbers are : {{min_value}} {% load static %} <img src="{% static "lab7_app/media/down.jpg" %}" alt="home" /></h3>
+</div>
+{%endblock%}
